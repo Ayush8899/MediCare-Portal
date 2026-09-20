@@ -1,0 +1,3 @@
+package com.healthcare.portal.controller;
+import com.healthcare.portal.entity.User; import com.healthcare.portal.security.CustomUserDetails; import com.healthcare.portal.service.*; import org.springframework.security.core.annotation.AuthenticationPrincipal; import org.springframework.web.bind.annotation.*; import java.util.*;
+@RestController @RequestMapping("/api/notifications") public class NotificationController { private final NotificationService service; private final AuthService auth; public NotificationController(NotificationService s,AuthService a){service=s;auth=a;} @GetMapping public List<?> list(@AuthenticationPrincipal CustomUserDetails u){User x=auth.getUserByEmail(u.getUsername());return service.forUser(x.getId());} }

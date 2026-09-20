@@ -1,0 +1,3 @@
+package com.healthcare.portal.dto;
+import java.math.BigDecimal;
+public class DoctorCreateRequest { public String email,fullName,phone,specialization,qualification,bio,city; public Integer experienceYears; public BigDecimal consultationFee; public String getEmail(){return email;} public String getFullName(){return fullName;} public String getPhone(){return phone;} public String getSpecialization(){return specialization;} public String getQualification(){return qualification;} public String getBio(){return bio;} public String getCity(){return city;} public Integer getExperienceYears(){return experienceYears;} public BigDecimal getConsultationFee(){return consultationFee;} }

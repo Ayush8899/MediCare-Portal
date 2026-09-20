@@ -1,0 +1,4 @@
+package com.healthcare.portal.entity;
+import jakarta.persistence.*; import java.time.LocalDateTime;
+@Entity @Table(name="email_otps") public class EmailOtp { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) private Long id; @ManyToOne(fetch=FetchType.EAGER) @JoinColumn(name="user_id",nullable=false) private User user; @Column(nullable=false) private String otp; @Column(nullable=false) private LocalDateTime expiresAt; @Column(nullable=false) private boolean used=false;
+ public EmailOtp(){} public EmailOtp(User u,String o,LocalDateTime e){user=u;otp=o;expiresAt=e;} public Long getId(){return id;} public User getUser(){return user;} public String getOtp(){return otp;} public LocalDateTime getExpiresAt(){return expiresAt;} public boolean isUsed(){return used;} public void setUsed(boolean v){used=v;} }

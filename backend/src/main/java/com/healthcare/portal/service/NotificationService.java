@@ -1,0 +1,3 @@
+package com.healthcare.portal.service;
+import com.healthcare.portal.entity.*; import com.healthcare.portal.repository.*; import org.springframework.stereotype.Service; import java.util.List;
+@Service public class NotificationService { private final NotificationRepository repo; public NotificationService(NotificationRepository r){repo=r;} public void notify(User u,String t,String m){repo.save(new Notification(u,t,m));} public List<Notification> forUser(Long id){return repo.findByUserIdOrderByCreatedAtDesc(id);} }

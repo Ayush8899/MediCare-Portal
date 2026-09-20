@@ -1,0 +1,1 @@
+package com.healthcare.portal.repository; import com.healthcare.portal.entity.TwoFactorChallenge; import org.springframework.data.jpa.repository.JpaRepository; public interface TwoFactorChallengeRepository extends JpaRepository<TwoFactorChallenge,Long>{}

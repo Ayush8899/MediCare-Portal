@@ -1,0 +1,1 @@
+package com.healthcare.portal.repository; import com.healthcare.portal.entity.BillingInvoice; import org.springframework.data.jpa.repository.JpaRepository; public interface BillingInvoiceRepository extends JpaRepository<BillingInvoice,Long>{}

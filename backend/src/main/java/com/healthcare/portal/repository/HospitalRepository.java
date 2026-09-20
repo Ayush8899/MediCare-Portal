@@ -1,0 +1,1 @@
+package com.healthcare.portal.repository; import com.healthcare.portal.entity.Hospital; import org.springframework.data.jpa.repository.JpaRepository; import java.util.Optional; public interface HospitalRepository extends JpaRepository<Hospital,Long>{ Optional<Hospital> findByNameIgnoreCase(String name); }

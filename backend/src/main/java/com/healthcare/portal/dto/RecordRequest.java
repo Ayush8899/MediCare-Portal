@@ -1,0 +1,2 @@
+package com.healthcare.portal.dto;
+public class RecordRequest { public Long patientId,doctorId,appointmentId; public String diagnosis,notes,documentUrl; public Long getPatientId(){return patientId;} public Long getDoctorId(){return doctorId;} public Long getAppointmentId(){return appointmentId;} public String getDiagnosis(){return diagnosis;} public String getNotes(){return notes;} public String getDocumentUrl(){return documentUrl;} }

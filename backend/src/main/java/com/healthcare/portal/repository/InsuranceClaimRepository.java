@@ -1,0 +1,1 @@
+package com.healthcare.portal.repository; import com.healthcare.portal.entity.InsuranceClaim; import org.springframework.data.jpa.repository.JpaRepository; public interface InsuranceClaimRepository extends JpaRepository<InsuranceClaim,Long>{}

@@ -1,0 +1,1 @@
+package com.healthcare.portal.repository; import com.healthcare.portal.entity.EmailOtp; import org.springframework.data.jpa.repository.JpaRepository; import java.util.Optional; public interface EmailOtpRepository extends JpaRepository<EmailOtp,Long>{Optional<EmailOtp> findTopByUserIdAndUsedFalseOrderByIdDesc(Long userId);}

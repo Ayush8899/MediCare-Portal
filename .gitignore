@@ -1,0 +1,40 @@
+# IntelliJ / JetBrains
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Maven
+backend/target/
+*.class
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment files
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Local Spring config
+application-local.properties
+backend/src/main/resources/application-local.properties
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary / backup files
+*.bak
+*.tmp

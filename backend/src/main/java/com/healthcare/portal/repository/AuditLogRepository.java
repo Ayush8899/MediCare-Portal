@@ -1,0 +1,1 @@
+package com.healthcare.portal.repository; import com.healthcare.portal.entity.AuditLog; import org.springframework.data.jpa.repository.JpaRepository; public interface AuditLogRepository extends JpaRepository<AuditLog,Long>{}

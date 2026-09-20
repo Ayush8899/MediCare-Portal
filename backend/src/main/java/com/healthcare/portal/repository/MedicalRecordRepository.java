@@ -1,0 +1,1 @@
+package com.healthcare.portal.repository; import com.healthcare.portal.entity.MedicalRecord; import org.springframework.data.jpa.repository.JpaRepository; import java.util.List; public interface MedicalRecordRepository extends JpaRepository<MedicalRecord,Long>{List<MedicalRecord> findByPatientIdOrderByCreatedAtDesc(Long id);}

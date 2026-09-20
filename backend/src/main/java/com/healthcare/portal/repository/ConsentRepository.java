@@ -1,0 +1,1 @@
+package com.healthcare.portal.repository; import com.healthcare.portal.entity.Consent; import org.springframework.data.jpa.repository.JpaRepository; public interface ConsentRepository extends JpaRepository<Consent,Long>{}
